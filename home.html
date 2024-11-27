@@ -22,35 +22,35 @@
 
  
 
-    <div class="boxMenu mt-2" >
-        <h4> The Ellusa <br> Cinema </h4>
+    <div class="boxMenu" >
+        <div class="bio" style="width: 100%; height: 120px; margin-top: 0;">
+            <div id="container">
+                <h4 id="txt">The Ellusa Cinema</h4>
+                <span id="gradient"></span>
+                <span id="light"></span>
+            </div> <br>
 
-        <ul class="skills">
+        <ul class="menu" style="display: flex;justify-content: center;text-align: center;gap:10%">
             <li><a href="#">AL CINEMA</a></li>
             <li><a href="#">PASS</a></li>
             <li><a href="#">CARD E PROMO</a></li>
             <li><a href="#">INIZIATIVE</a></li>
             <li><a href="#">BUSINESS</a></li>
+
         </ul>
 
         <div class="user">
-            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style= "height: 15px; width:15px"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg> 
-                
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 15px; width:15px">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> </button>
-
-            <!-- al click far apparire REGISTRATI e LOG IN -->
-            
-           <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 15px; width:15px"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> </button>
-
-           <!-- al click deve apparire la barra di ricerca -->
+           
         </div>
     </div>
 
-    <div class="menu1">
-       <button type="menu">Scegli il cinema!</button>
+    <div id="imageGrid"></div>
+
+    <div class="menu1" style="display: flex;justify-content: space-around;">
+       <button type="menu" class="btn btn-outline-warning">Scegli il cinema!</button>
 
         <!-- inserire un sotto menu con le sedi -->
-        <ul>
+        <ul style="display: flex ;justify-content: center;gap:10px">
             <li><a href="#">INFO CINEMA</a></li>
             <li><a href="#">CONTATTI</a></li>
             <li><a href="#">PREZZI</a></li>
@@ -59,21 +59,14 @@
 
  </header>
 
- <div class="banner mt-4 m-2 p-3">
-  <button class="btn btn-warning"><i class="bi bi-arrow-left-circle"></i></button>
-  <button class="btn btn-warning"><i class="bi bi-arrow-right-circle"></i></button>
-  <div class="slider" style="overflow-x: scroll;width: 100%;" >
-    <div id="imageGrid" style="width: 100%;margin: 0;" >
-     
-    </div>
-</div>
+
     
  </div>
 
 
  <main>
     <div class="info m-3" style="display: flex; align-items: center;  justify-content: center;">
-    <p style="color: coral;text-align: center;">
+    <p style="color: rgb(168, 161, 161);;text-align: center;">
     Siamo aperti anche la mattina, verifica gli orari. Scopri la nostra selezione di film in versione originale. Acquista online e risparmia: ogni biglietto online costa (prevendita inclusa) 1€ in meno rispetto al biglietto acquistato in cassa.</p>
  </div>
     <hr>
@@ -81,18 +74,63 @@
     <div class="locandina" id="films"></div>
         
 
-
-
-
-    </div>
-
-
-
+   
 
  </main>
 
+ <footer >
+    <div class="bio" style="width: 100%; height: 250px; margin-top: 45px;">
+        <div id="container">
+            <h4 id="txt">The Ellusa Cinema</h4>
+            <span id="gradient"></span>
+            <span id="light"></span>
+        </div> <br>
+        <p style="color: rgb(168, 161, 161);text-align: center;width: 100%;">The Space Cinema Guidonia è un multisala. <br>
+           Consulta la programmazione, guarda i trailer e scegli il tuo prossimo film. <br> Scopri le nostre offerte e come risparmiare, <a href="" style="color: darkgoldenrod;">cliccando QUI.</a>
+           The Space Cinema Guidonia offre 10 sale, tutte dotate di tecnologia Digital Dolby Surround, poltrone confortevoli e spaziose, anche VIP. <br> A tua disposizione c’è anche l’area ristorazione, dove puoi trovare soft drink e caffetteria, popcorn, snack, caramelle e molto altro.
+           Goditi tutte le ultime uscite, anche in lingua originale o in 3D. Affronta le nostre imperdibili maratone e vivi un mondo di spettacolo con gli eventi Extra: opera, balletto, concerti, documentari e teatro. <br> Scopri le iniziative dedicate alla famiglia: sconti, Cinema Park e molto altro.</p>
+    </div>
+
+    <div class="section" >
+        <ul class="info">
+           <li style="color: darkgoldenrod;">Contatti</li>
+           <li>FAQ e Contattaci</li>
+        </ul>
+        <ul >
+            <li style="color: darkgoldenrod;">The Ellusa Cinema</li>
+            <li>Chi siamo </li>
+            <li> PNRR</li>
+            <li>Lavora con noi</li>
+            <li>nostri cinema</li>
+        </ul>
+        <ul>
+            <li style="color: darkgoldenrod;">Note legali</li>
+            <li>Privacy policy</li>
+            <li>Cookie policy</li>
+            <li>Condizioni di utilizzo</li>
+            <li>Regolamenti</li>
+        </ul>
+        <ul>
+            <li style="color: darkgoldenrod;">Social </li> 
+            <li>Facebook</li>
+            <li>Youtube</li> 
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+        <ul>
+           <li style="color: darkgoldenrod;">La Nostra App</li>
+           <li>Scopri di più</li>
+        </ul>
+    </div>
+
+
+  </div>
+
+
+
+
 </div>    
-<script src="src/app.js"></script>
+<script src="dist/app.js"></script>
 
 </body>
 </html>
