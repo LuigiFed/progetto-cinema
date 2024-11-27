@@ -16,25 +16,35 @@ body {
     
 }
 
-.slider {margin:0;
-
-}
-
 #imageGrid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap  ;
     gap: 10px;
-    justify-content: flex-start;
-    padding: 0;
-    height: 400px;
-    color: rgba(255, 255, 255, 0.347);
+    padding: 20px;
+
+    
 }
+
+.card {
+    border: 3px solid #dce236; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(255, 255, 0, 0.3);
+    padding: 20px; 
+    transition: all 0.3s ease; 
+   
+}
+.card:hover {
+    box-shadow: 0 6px 20px rgba(255, 255, 0, 0.5); 
+    border-color: #ddf542; 
+    cursor: pointer;
+}
+
 
 .card-film {box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.608);
     transition: transform 0.4s;
     cursor: pointer;
     border-radius: 15px;
-    overflow: hidden;
+
 }
 
 
@@ -90,9 +100,6 @@ body {
 .img-locandina:hover::after {
     opacity: 1; 
 }
-
-
-
 
 .boxMenu{
     display: flex;
