@@ -1,0 +1,88 @@
+.cinema {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.schermo {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    padding: 10px 0;
+    background-color: silver;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.etichetta-fila {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 30px;
+    text-align: right;
+}
+
+.posti {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.posto {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: darkgoldenrod;    
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.posto:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+
+.carrello {
+    width: 20%;
+    background-color: #3333333e;
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.168);
+    color: white;
+    position: fixed;
+    top: 29%;
+    left: 80%;
+    z-index: 1;
+}
+
+#carrelloLista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#carrelloLista li {
+    padding: 5px;
+    border-bottom: 1px solid #444;
+}
