@@ -4,7 +4,7 @@
   "main": "index.js",
   "start": "ts-node ./src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "json-server --watch db.json -m ./node_modules/json-server-auth -r routes.json"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.8"
   }
 }

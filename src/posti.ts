@@ -1,43 +1,40 @@
+import axios from "axios";
+
 type Posti = {
     fila : string,
     numero : number[], 
 }
 
 
-const postiCinema :Posti[]= [
-    { fila: 'A', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'B', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'C', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'D', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'E', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'F', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'G', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'H', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'I', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },
-    { fila: 'J', numero: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15,16, 17, 18, 19, 20] },  
-];
+window.onload = async () => {
+    try {
+        // Effettua la chiamata con axios per ottenere i dati
+        const response = await axios.get("http://localhost:3000/prenotazioni");
+        const postiCinema = response.data; // Ottieni i dati dalla risposta
+        
+        // Passa i dati alla funzione per mostrare i posti
+        mostraPosti(postiCinema);
+    } catch (error) {
+        console.error("Errore durante il recupero dei dati:", error);
+    }
+}
 
-
-function mostraPosti() {
+function mostraPosti(postiCinema: Posti[]): void {
     const divCinema = document.querySelector('.cinema');
     if (divCinema) {
         postiCinema.forEach(element => {
-            // Genero il contenuto HTML per ogni fila
             const str = `
-                  <div class="fila">
+                <div class="fila">
                     <span class="etichetta-fila">${element.fila}</span>
                     <div class="posti">
                         ${element.numero.map(numero => `<span class="posto">${numero}</span>`).join('')}
                     </div>
-                     
+                </div>
             `;
-            // Aggiungo il contenuto HTML al contenitore
             divCinema.innerHTML += str;
         });
     }
 }
 
-// Eseguo la funzione per mostrare i posti
-mostraPosti();
 
 
