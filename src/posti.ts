@@ -9,12 +9,15 @@ fetch('http://localhost:3000/posti')
         mostraPosti(data);
     })
     
+
     function mostraPosti(postiCinema: Posti[]): void {
         const divCinema = document.querySelector('.cinema');
         if (divCinema) {
             const content = postiCinema.map(element => {
                 if (Array.isArray(element.numero)) {
-                    const postiHTML = element.numero.map(numero => `<span class="posto">${numero}</span>`).join('');
+                    const postiHTML = element.numero.map(numero => {
+                        return `<span class="posto" data-fila="${element.fila}" data-numero="${numero}">${numero}</span>`;
+                    }).join('');
                     return `
                         <div class="fila">
                             <span class="etichetta-fila">${element.fila}</span>
@@ -28,6 +31,7 @@ fetch('http://localhost:3000/posti')
             aggiungiEventListenerPosti();
         }
     }
+    
     
     function aggiungiEventListenerPosti() {
         const posti = document.querySelectorAll('.posto');
@@ -48,31 +52,39 @@ fetch('http://localhost:3000/posti')
     function aggiornaCarrello(fila: string | null, numero: string | null, aggiungere: boolean) {
         const carrelloLista = document.getElementById('carrelloLista') as HTMLUListElement;
         const carrelloTotale = document.querySelector('.carrello span');
-        const prezzoPosto = 10; // Ad esempio, il prezzo di ogni posto è 10€
+        const prezzoPosto = 5; // Ad esempio, il prezzo di ogni posto è 5€
+    
+        // Verifica il posto da aggiungere o rimuovere
+        console.log(`Aggiungere: ${aggiungere}, Fila: ${fila}, Numero: ${numero}`);
     
         // Se il posto è selezionato, aggiungilo al carrello
         if (aggiungere) {
             const carrelloItem = document.createElement('li');
             carrelloItem.textContent = `Fila ${fila}, Posto ${numero}`;
             carrelloLista.appendChild(carrelloItem);
+            console.log(`Posto aggiunto: Fila ${fila}, Posto ${numero}`);
         } else {
             // Se il posto non è selezionato, rimuovilo dal carrello
             const items = carrelloLista.querySelectorAll('li');
             items.forEach(item => {
                 if (item.textContent === `Fila ${fila}, Posto ${numero}`) {
                     carrelloLista.removeChild(item);
+                    console.log(`Posto rimosso: Fila ${fila}, Posto ${numero}`);
                 }
             });
         }
-        
+    
         // Aggiorna il totale
         const numPostiSelezionati = carrelloLista.querySelectorAll('li').length;
+        console.log(`Posti selezionati: ${numPostiSelezionati}`);
         if (numPostiSelezionati > 0) {
             carrelloTotale!.textContent = `Totale: €${numPostiSelezionati * prezzoPosto}`;
         } else {
             carrelloTotale!.textContent = `Totale: €`;
         }
     }
+    
+
     
     // CSS per la selezione del posto
     const style = document.createElement('style');
