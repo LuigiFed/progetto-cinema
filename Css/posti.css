@@ -1,3 +1,41 @@
+@media screen and (min-width:320px) and (max-width: 780px){
+    .body{
+        width: 100%;
+    }
+    .menu{
+            display: none;  
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 50px; 
+            left: 0;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-toggler {
+        display: block; 
+    }
+     .scegliPosto{
+        margin-top: 150px;
+        width: 100%;
+    }
+    .home .cinema{
+        width: 100%;
+    }
+   .cinema .posto{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+  .home .carrello{
+ position: relative;
+ left: 0;
+ width: 100%;
+}
+}
+
+
 .cinema {
     width: 800px;
     margin: 0 auto;
