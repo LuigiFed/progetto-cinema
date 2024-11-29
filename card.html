@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema The Ellusa</title>
+    <link rel="stylesheet" href="Css/posti.css">
+    <link rel="stylesheet" href="Css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link 
+</head>
+<body>
+
+   <div class="boxMenu" >
+        <div class="bio" style="width: 100%; height: 120px; margin-top: 0;">
+            <div id="container">
+                <h4 id="txt">The Ellusa Cinema</h4>
+                <span id="gradient"></span>
+                <span id="light"></span>
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="ticket-card">
+        <img src="./assets/questa.jpg" alt="">
+        <h3 class="info" id="titolo" > film:</h3>
+        <h5 class="info"  id="posti"> posto:</h5>
+        <h5 class="info"  id="totale">totale:</h5>
+
+        <h5 class="vision">BUONA VISIONE!!!</h5>
+    </div>
+
+    <style>
+        body {
+        background-image: url('./assets/bevande2.avif');
+        background-size: cover; /* Copre l'intero schermo */
+        background-position: center; /* Centra l'immagine */
+        background-repeat: no-repeat; /* Evita ripetizioni */
+        margin: 0; /* Rimuove il margine del body */
+        min-height: 100vh; /* Assicura che il body copra tutta l'altezza */
+    }
+
+       img{
+        width: 90px;
+        margin-left: 250px ;
+        margin-top: 10px;
+       }
+        
+       .ticket-card {
+        border: solid darkgoldenrod 2px;
+        background-color: black;
+        width: 600px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 500px;
+       }
+
+       .info{
+        color: darkgoldenrod;
+        line-height:30px;
+        margin-top: 40px;
+        margin-left: 50px;
+        }
+
+        .vision{
+            text-align: center;
+            color: darkgoldenrod;
+        }
+
+        @media screen and (min-width: 320px)  and (max-width: 780px) {
+    body {
+        background-image: url('./assets/bevande.jpg');
+        background-size: cover; /* Copre l'intero schermo */
+        background-position: center; /* Centra l'immagine */
+        background-repeat: no-repeat; /* Evita ripetizioni */
+        margin: 0; /* Rimuove il margine del body */
+        min-height: 100vh; /* Assicura che il body copra tutta l'altezza */
+    }
+
+    .ticket-card {
+        border: solid darkgoldenrod 2px;
+        background-color: black;
+        width: 90%; /* Usa percentuale per adattarsi */
+        max-width: 500px; /* Larghezza massima */
+        height: 250px;
+        margin: 100px auto; /* Centra il contenitore */
+    }
+
+    .info{
+        color: darkgoldenrod;
+        line-height:20px;
+        margin-top: 25px;
+        margin-left: 50px;
+        }
+
+        img{
+            margin-left: 200px;
+            margin-top: 15px;
+        }
+}
+
+
+ 
+
+
+    </style>
+    
+</body>
+</html>
