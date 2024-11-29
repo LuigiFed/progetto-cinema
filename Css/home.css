@@ -263,7 +263,7 @@ li:hover {
 /* Image Grid */
 #imageGrid {
     display: flex;
-    flex-wrap: wrap; /* Permette agli elementi di andare a capo */
+    flex-wrap: nowrap; /* Permette agli elementi di andare a capo */
     gap: 15px;
     padding: 20px;
     margin-top: 0;
