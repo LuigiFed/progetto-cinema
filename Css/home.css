@@ -273,6 +273,7 @@ li:hover {
         width: 90%; 
     }
 
+
     .menu{
         display: none;  
         width: 100%;
@@ -411,11 +412,28 @@ li:hover {
     }
     .orari {
         width: 100%;
-        margin-top: 20px;
-        display: none;
+        
+        
+        
+    }
+
+    .section{
+   
+        display: flex; 
+        flex-direction: row; 
+        margin-top: 40px;
+        color: rgb(168, 161, 161);
         
     }
     
+        ul{
+            list-style: none;
+            margin-left: 0;
+            margin-left: 0;
+        }
+     .section li {margin: 0;
+    padding: 0;
+text-align: left;}
 }
 
  
