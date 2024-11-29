@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
+
+    
     
     
 </head>
@@ -38,9 +40,9 @@
                 Scegli il cinema
                 </button>
                 <ul class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.1);">
-                <li><a class="dropdown-item" href="#">Roma</a></li>
-                <li><a class="dropdown-item" href="#">Napoli</a></li>
-                <li><a class="dropdown-item" href="#">Torino</a></li>
+                  <li><a class="dropdown-item" href="#">Roma</a></li>
+                  <li><a class="dropdown-item" href="#">Napoli</a></li>
+                  <li><a class="dropdown-item" href="#">Milano</a></li>
                 </ul>
             </div>
             <li><a href="#">AL CINEMA</a></li>
@@ -49,7 +51,31 @@
             <li><a href="#">INIZIATIVE</a></li>
             <li><a href="#">BUSINESS</a></li>
 
+            <div class="dropdown">
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="login-btn">Log in</button>
+                <ul class="dropdown-menu men" aria-labelledby="login-btn">
+                    <li><a class="dropdown-item" href="#">Registrati</a></li>
+                    <li><a class="dropdown-item" href="#">Accedi</a></li>
+                </ul>
+            </div>
+            
+
+
+            <!-- <div class="login-container">
+                <h2>Login</h2>
+                <label for="user-select">Seleziona il tuo account:</label>
+                <select id="user-select">
+                    <option value="" selected>-- Seleziona un utente --</option>
+                    <option value="admin">Admin</option>
+                    <option value="user1">User 1</option>
+                    <option value="user2">User 2</option>
+                </select>
+                <button id="login-button">Accedi</button>
+                <div class="welcome-message" id="welcome-message"></div>
+            </div> -->
         </ul>
+
+        
 
         <div class="user">
            
@@ -72,6 +98,50 @@
  </div>
     <hr>
 
+    <div id="film-filter">
+        
+        <form id="filter-form" ">
+          <div class="filter-column">
+            <label for="genre">Genere:</label> 
+            <select id="genere"> 
+              <option value="">GENERE</option>
+              <option value="comico">Comico</option>
+              <option value="azione">Azione</option>
+              <option value="commedia">Commedia</option>
+              <option value="drammatico">Drammatico</option>
+              <option value="horror">Horror</option>
+              <option value="fantasy">Fantasy</option>
+            </select> 
+           
+            
+             <label style="color: darkgoldenrod;"  for="time">Orario:</label> 
+             <input class="time-wrapper" type="time" id="orari">
+           
+          
+            <label for="rating">Recensioni:</label>
+            <select id="rating">
+              <option value="">RECENSIONI</option>
+              <option value="1">1 stella</option>
+              <option value="2">2 stelle</option>
+              <option value="3">3 stelle</option>
+              <option value="4">4 stelle</option>
+              <option value="5">5 stelle</option>
+            </select>
+          </div>
+        </form>
+      
+        <div id="results">
+          <div class="res">
+            <button class="apply" type="button" onclick="applyFilters()">Applica</button>
+            <h5 style="color: darkgoldenrod;">Risultati:</h5>
+            <ul id="movie-list">
+            <!-- Risultati filtrati appariranno qui -->
+            </ul>
+          </div>
+        </div>
+    </div>
+      
+
     <div class="locandina" id="films"></div>
         
 
@@ -88,7 +158,7 @@
         </div> <br>
         <p style="color: rgb(168, 161, 161);text-align: center;width: 100%;">The Space Cinema Guidonia è un multisala. <br>
            Consulta la programmazione, guarda i trailer e scegli il tuo prossimo film. <br> Scopri le nostre offerte e come risparmiare, <a href="" style="color: darkgoldenrod;">cliccando QUI.</a>
-           The Space Cinema Guidonia offre 10 sale, tutte dotate di tecnologia Digital Dolby Surround, poltrone confortevoli e spaziose, anche VIP. <br> A tua disposizione c’è anche l’area ristorazione, dove puoi trovare soft drink e caffetteria, popcorn, snack, caramelle e molto altro.
+           The Ellusa Cinema offre 10 sale, tutte dotate di tecnologia Digital Dolby Surround, poltrone confortevoli e spaziose, anche VIP. <br> A tua disposizione c’è anche l’area ristorazione, dove puoi trovare soft drink e caffetteria, popcorn, snack, caramelle e molto altro.
            Goditi tutte le ultime uscite, anche in lingua originale o in 3D. Affronta le nostre imperdibili maratone e vivi un mondo di spettacolo con gli eventi Extra: opera, balletto, concerti, documentari e teatro. <br> Scopri le iniziative dedicate alla famiglia: sconti, Cinema Park e molto altro.</p>
     </div>
 
