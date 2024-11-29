@@ -48,42 +48,41 @@ fetch('http://localhost:3000/posti')
             });
         });
     }
+
+    
     
     function aggiornaCarrello(fila: string | null, numero: string | null, aggiungere: boolean) {
-        const carrelloLista = document.getElementById('carrelloLista') as HTMLUListElement;
-        const carrelloTotale = document.querySelector('.carrello span');
-        const prezzoPosto = 5; // Ad esempio, il prezzo di ogni posto è 5€
-    
-        // Verifica il posto da aggiungere o rimuovere
-        console.log(`Aggiungere: ${aggiungere}, Fila: ${fila}, Numero: ${numero}`);
-    
-        // Se il posto è selezionato, aggiungilo al carrello
-        if (aggiungere) {
-            const carrelloItem = document.createElement('li');
-            carrelloItem.textContent = `Fila ${fila}, Posto ${numero}`;
-            carrelloLista.appendChild(carrelloItem);
-            console.log(`Posto aggiunto: Fila ${fila}, Posto ${numero}`);
-        } else {
-            // Se il posto non è selezionato, rimuovilo dal carrello
-            const items = carrelloLista.querySelectorAll('li');
-            items.forEach(item => {
-                if (item.textContent === `Fila ${fila}, Posto ${numero}`) {
-                    carrelloLista.removeChild(item);
-                    console.log(`Posto rimosso: Fila ${fila}, Posto ${numero}`);
-                }
-            });
-        }
-    
-        // Aggiorna il totale
-        const numPostiSelezionati = carrelloLista.querySelectorAll('li').length;
-        console.log(`Posti selezionati: ${numPostiSelezionati}`);
-        if (numPostiSelezionati > 0) {
-            carrelloTotale!.textContent = `Totale: €${numPostiSelezionati * prezzoPosto}`;
-        } else {
-            carrelloTotale!.textContent = `Totale: €`;
-        }
+    console.log('Fila:', fila, 'Numero:', numero);  // Debug per controllare i valori
+    const carrelloLista = document.getElementById('carrelloLista') as HTMLUListElement;
+    const carrelloTotale = document.querySelector('.carrello span');
+    const prezzoPosto = 5; // Ad esempio, il prezzo di ogni posto è 5€
+
+    // Se il posto è selezionato, aggiungilo al carrello
+    if (aggiungere) {
+        const carrelloItem = document.createElement('li');
+        carrelloItem.textContent = `Fila ${fila}, Posto ${numero}`;
+        carrelloLista.appendChild(carrelloItem);
+   
+    } else {
+        // Se il posto non è selezionato, rimuovilo dal carrello
+        const items = carrelloLista.querySelectorAll('li');
+        items.forEach(item => {
+            if (item.textContent === `Fila ${fila}, Posto ${numero}`) {
+                carrelloLista.removeChild(item);
+                console.log(`Posto rimosso: Fila ${fila}, Posto ${numero}`);
+            }
+        });
     }
-    
+
+    // Aggiorna il totale
+    const numPostiSelezionati = carrelloLista.querySelectorAll('li').length;
+    console.log(`Posti selezionati: ${numPostiSelezionati}`);
+    if (numPostiSelezionati > 0) {
+        carrelloTotale!.textContent = `Totale: €${numPostiSelezionati * prezzoPosto}`;
+    } else {
+        carrelloTotale!.textContent = `Totale: €`;
+    }
+}
 
     
     // CSS per la selezione del posto
@@ -94,3 +93,5 @@ fetch('http://localhost:3000/posti')
         }
     `;
     document.head.appendChild(style);
+
+console.log("ciao")

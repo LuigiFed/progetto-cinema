@@ -39,17 +39,15 @@ function aggiungiEventListenerPosti() {
     });
 }
 function aggiornaCarrello(fila, numero, aggiungere) {
+    console.log('Fila:', fila, 'Numero:', numero); // Debug per controllare i valori
     const carrelloLista = document.getElementById('carrelloLista');
     const carrelloTotale = document.querySelector('.carrello span');
     const prezzoPosto = 5; // Ad esempio, il prezzo di ogni posto è 5€
-    // Verifica il posto da aggiungere o rimuovere
-    console.log(`Aggiungere: ${aggiungere}, Fila: ${fila}, Numero: ${numero}`);
     // Se il posto è selezionato, aggiungilo al carrello
     if (aggiungere) {
         const carrelloItem = document.createElement('li');
         carrelloItem.textContent = `Fila ${fila}, Posto ${numero}`;
         carrelloLista.appendChild(carrelloItem);
-        console.log(`Posto aggiunto: Fila ${fila}, Posto ${numero}`);
     }
     else {
         // Se il posto non è selezionato, rimuovilo dal carrello
@@ -79,3 +77,4 @@ style.innerHTML = `
         }
     `;
 document.head.appendChild(style);
+console.log("ciao");
