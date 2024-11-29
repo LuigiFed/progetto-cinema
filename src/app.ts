@@ -57,7 +57,7 @@ async function fetchFilms() {
           films.forEach(film => {
               const filmCard = document.createElement('div');
               filmCard.innerHTML = `
-                  <div class="locandineFilm card-body m-4" style="display: flex; align-items: center;border: 1px solid white;">
+                  <div class="locandineFilm card-body m-4">
                       <div class="img-locandina m-5 p-2">
                           <img src="${film.immagineLocandina}" alt="${film.titolo}" style="width: 100%;">
                       </div>
@@ -70,7 +70,7 @@ async function fetchFilms() {
                               <p style="text-align: left;"><small>Durata: ${film.durata} min</small></p>
                               <p style="text-align: left;"><small><strong>Cast:</strong> ${film.cast}</small></p>
                           </div>
-                          <div class="p-5">
+                          <div class="orari p-5">
                               <button class="btn btn-outline-warning m-2">18:00</button>
                               <button class="btn btn-outline-warning m-2">20:00</button>
                               <button class="btn btn-outline-warning m-2">22:00</button>
