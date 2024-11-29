@@ -56,8 +56,8 @@ function fetchFilms() {
                       <div class="img-locandina m-5 p-2">
                           <img src="${film.immagineLocandina}" alt="${film.titolo}" style="width: 100%;">
                       </div>
-                      <div  style="width: 70%; padding-left: 10px; padding:20px; display: flex; flex-direction: column; justify-content: start;">
-                          <div class="locandina text ml-5 p-5" style="margin-left:20px">
+                      <div class="informazioni">
+                          <div class="locandina text ml-5 p-5" >
                               <p style="text-align: left;"><strong>${film.titolo}</strong></p>
                               <p style="text-align: left;"><strong>Anno:</strong> ${film.anno}</p>
                               <p style="text-align: left;"><strong>Genere:</strong> ${film.genere}</p>
