@@ -86,4 +86,4 @@ function fetchFilms() {
 }
 // Chiamata alla funzione
 fetchFilms();
-console.log("ciao");
+
