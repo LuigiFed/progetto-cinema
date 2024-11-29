@@ -53,11 +53,11 @@ function fetchFilms() {
                     const filmCard = document.createElement('div');
                     filmCard.innerHTML = `
                   <div class="locandineFilm card-body m-4" style="display: flex; align-items: center;border: 1px solid white;">
-                      <div class="img-locandina m-5 p-2" style="width:10%; height:7%;">
+                      <div class="img-locandina m-5 p-2">
                           <img src="${film.immagineLocandina}" alt="${film.titolo}" style="width: 100%;">
                       </div>
-                      <div style="width: 70%; padding-left: 10px; padding:20px; display: flex; flex-direction: column; justify-content: start;">
-                          <div class="text ml-5 p-5" style="margin-left:20px">
+                      <div  style="width: 70%; padding-left: 10px; padding:20px; display: flex; flex-direction: column; justify-content: start;">
+                          <div class="locandina text ml-5 p-5" style="margin-left:20px">
                               <p style="text-align: left;"><strong>${film.titolo}</strong></p>
                               <p style="text-align: left;"><strong>Anno:</strong> ${film.anno}</p>
                               <p style="text-align: left;"><strong>Genere:</strong> ${film.genere}</p>
