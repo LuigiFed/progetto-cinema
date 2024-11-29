@@ -33,6 +33,21 @@
  left: 0;
  width: 100%;
 }
+.section{
+    flex-direction: row; 
+    margin-top: 40px;
+    color: rgb(168, 161, 161);
+}
+   ul{
+        list-style: none;
+        margin-left: 0;
+        margin-left: 0;
+    }
+.section li {
+    margin: 0;
+    padding: 0;
+   
+}
 }
 
 
