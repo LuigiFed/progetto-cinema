@@ -414,7 +414,34 @@ li:hover {
         
         
     }
+    /* Da aggiustare il css */
+    #genere-menu , #recensioni , #orari{
+        width: auto;
+        z-index: 1;
+        margin-left:20px;
+        background-color: #00000067;
+    }
 
+    #genere-menu li , #recensioni li , #orari li{
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        background-color: #000000b7;
+        color: darkgoldenrod;
+    }
+  
+
+    #genere-menu a , #recensioni a, #orari a{
+        color: darkgoldenrod;
+    }
+
+    #genere-menu a:hover , #recensioni a:hover, #orari a:hover{
+        color: yellow; 
+        text-shadow: 0 0 15px yellow, 0 0 30px yellow; 
+        transform: scale(1.1); 
+        z-index: 1; 
+        background-color: #00000062;
+    }
     
     
 }

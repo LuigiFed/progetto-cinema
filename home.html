@@ -42,16 +42,99 @@
                 <li><a class="dropdown-item" href="#">Napoli</a></li>
                 <li><a class="dropdown-item" href="#">Torino</a></li>
                 </ul>
+                
             </div>
             <li><a href="#">AL CINEMA</a></li>
             <li><a href="#">PASS</a></li>
             <li><a href="#">CARD E PROMO</a></li>
             <li><a href="#">INIZIATIVE</a></li>
             <li><a href="#">BUSINESS</a></li>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="scelta-genere" data-bs-toggle="dropdown" aria-expanded="false">
+                    Scegli un genere
+                </button>
+                <ul class="dropdown-menu" id="genere-menu" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <li><a class="dropdown-item" href="#">Commedia</a></li>
+                    <li><a class="dropdown-item" href="#">Azione</a></li>
+                    <li><a class="dropdown-item" href="#">Drammatico</a></li>
+                    <li><a class="dropdown-item" href="#">Fantascienza</a></li>
+                    <li><a class="dropdown-item" href="#">Avventura</a></li>
+                    <li><a class="dropdown-item" href="#">Storico</a></li>
+                    <li><a class="dropdown-item" href="#">Comico</a></li>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="scelta-recensioni" data-bs-toggle="dropdown" aria-expanded="false">
+                    Recensioni
+                </button>
+                <ul class="dropdown-menu" id="recensioni" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="scelta-orari" data-bs-toggle="dropdown" aria-expanded="false">
+                    Orari    
+                </button>
+                <ul class="dropdown-menu" id="orari" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <li>
+                        <a class="dropdown-item" href="#">18:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">20:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">22:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">24:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">02:00</a>
+                    </li>
+                </ul>
+                
 
+                
+            </div>
+            
+            <div id="film-container">
+                
+            </div>
+            
         </ul>
 
-        <div class="user">
+        
            
         </div>
     </div>
@@ -132,6 +215,7 @@
 
 </div>    
 <script src="dist/app.js"></script>
+<script src="dist/selezione.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
