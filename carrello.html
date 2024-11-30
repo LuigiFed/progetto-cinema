@@ -16,9 +16,117 @@
                 <h4 id="txt">The Ellusa Cinema</h4>
                 <span id="gradient"></span>
                 <span id="light"></span>
-            </div> 
+            </div> <br>
+
+    
+
+        <ul class="menu" style="display: flex;justify-content: center;text-align: center;gap:3%">
+            <div class="btn-group">
+                <button type="button" class=" btn btn-outline-warning dropdown-toggle" id="scelta-citta" data-bs-toggle="dropdown" aria-expanded="false">
+                Scegli il cinema
+                </button>
+                <ul class="dropdown-menu " style="background-color: rgba(0, 0, 0, 0.1);">
+                <li><a class="dropdown-item" href="#">Roma</a></li>
+                <li><a class="dropdown-item" href="#">Napoli</a></li>
+                <li><a class="dropdown-item" href="#">Torino</a></li>
+                </ul>
+                
+            </div>
+            <li><a href="#">AL CINEMA</a></li>
+            <li><a href="#">PASS</a></li>
+            <li><a href="#">CARD E PROMO</a></li>
+            <li><a href="#">INIZIATIVE</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="scelta-genere" data-bs-toggle="dropdown" aria-expanded="false">
+                    Scegli un genere
+                </button>
+                <ul class="dropdown-menu" id="genere-menu" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <li><a class="dropdown-item" href="#" data-genere="Commedia">Commedia</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Azione">Azione</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Drammatico">Drammatico</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Fantascienza">Fantascienza</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Avventura">Avventura</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Storico">Storico</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Comico">Comico</a></li>
+                    <li><a class="dropdown-item" href="#" data-genere="Fantasy">Fantasy</a></li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="scelta-recensioni" data-bs-toggle="dropdown" aria-expanded="false">
+                    Recensioni
+                </button>
+                <ul class="dropdown-menu" id="recensioni" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="scelta-orari" data-bs-toggle="dropdown" aria-expanded="false">
+                    Orari    
+                </button>
+                <ul class="dropdown-menu" id="orari" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <li>
+                        <a class="dropdown-item" href="#">18:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">20:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">22:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">24:00</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">02:00</a>
+                    </li>
+                </ul>
+                
+
+                
+            </div>
+            
+            <div id="film-container">
+                
+            </div>
+            
+        </ul>
+
+        
+           
         </div>
     </div>
+
 
     <!-- Carrello -->
     <div class="car">
@@ -52,78 +160,198 @@
         <button onclick="vaiAllaPagina()">Completa Acquisto</button>
     </div>
 
+    <div class="section" >
+        <ul class="info">
+           <li style="color: darkgoldenrod;">Contatti</li>
+           <li>FAQ e Contattaci</li>
+        </ul>
+        <ul >
+            <li style="color: darkgoldenrod;">The Ellusa Cinema</li>
+            <li>Chi siamo </li>
+            <li> PNRR</li>
+            <li>Lavora con noi</li>
+            <li>nostri cinema</li>
+        </ul>
+        <ul>
+            <li style="color: darkgoldenrod;">Note legali</li>
+            <li>Privacy policy</li>
+            <li>Cookie policy</li>
+            <li>Condizioni di utilizzo</li>
+            <li>Regolamenti</li>
+        </ul>
+        <ul>
+            <li style="color: darkgoldenrod;">Social </li> 
+            <li>Facebook</li>
+            <li>Youtube</li> 
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+        <ul>
+           <li style="color: darkgoldenrod;">La Nostra App</li>
+           <li>Scopri di più</li>
+        </ul>
+    </div>
+
+
 
     <style>
         .car {
             height: 350px;
             width: 100%;
-
-           h2 {
+            margin-top: 100px;
+        }
+    
+        h2 {
             color: darkgoldenrod;
-            margin-left: 750px;
-            }
-
-            #biglietti {
-                margin-top: 40px;
-                color: darkgoldenrod;
-                margin-left: 300px;
-                
-            }
-
-            .totale {
+            margin-left: 300px;
+        }
+    
+        #biglietti {
+            margin-top: 40px;
+            color: darkgoldenrod;
+            margin-left: 300px;
+        }
+    
+        .totale {
             margin-top: 40px;
             margin-left: 500px;
             font-weight: bold;
             margin-top: 20px;
             color: darkgoldenrod;
-            }
-
+        }
     
-            .metodo-pagamento {
+        .metodo-pagamento {
             margin-top: 20px;
             color: darkgoldenrod;
             margin-left: 300px;
+            width: 300px;
         }
-
+    
         .dati-pagamento {
             color: darkgoldenrod;
             display: none;
             margin-top: 10px;
-            
         }
-
-        select, input{
-        background-color: black; /* Sfondo nero */
-        color: darkgoldenrod; /* Testo in darkgoldenrod */
-        border: 1px solid darkgoldenrod; /* Bordo colore darkgoldenrod */
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 16px;
-        margin-top: 10px;
+    
+        select, input {
+            background-color: black;
+            color: darkgoldenrod;
+            border: 1px solid darkgoldenrod;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            width: 100%; /* Rende input/select responsive */
         }
-
-
-        select:focus, input:focus{
-            outline: none; /* Rimuove il contorno predefinito */
-            box-shadow: 0 0 5px darkgoldenrod; /* Effetto luminoso su focus */
+    
+        select:focus, input:focus {
+            outline: none;
+            box-shadow: 0 0 5px darkgoldenrod;
         }
-
-        button{
+    
+        button {
             margin-left: 300px;
             margin-top: 20px;
             color: darkgoldenrod;
             background-color: black;
             border: solid 2px darkgoldenrod;
+            padding: 10px 20px; /* Regola la dimensione del bottone */
         }
-
-        button:hover{
+    
+        button:hover {
             background-color: darkgoldenrod;
             color: black;
         }
-        
-    }
-    </style>
 
+        .section {margin-top: 15%;}
+    
+      
+        @media (max-width: 700px) {
+            h2 {
+                margin-left: 20px;
+                font-size: 18px; 
+            }
+    
+            #biglietti {
+                margin-left: 20px;
+                font-size: 14px; 
+            }
+    
+            .totale {
+                margin-left: 20px;
+                font-size: 14px; 
+            }
+    
+            .metodo-pagamento {
+                margin-left: 20px;
+                font-size: 14px; 
+            
+            }
+    
+            .dati-pagamento {
+                margin-left: 20px;
+                font-size: 14px; 
+            }
+    
+            select, input {
+                font-size: 14px; 
+                margin-left: 0;
+                width: calc(100% - 20px); 
+            }
+    
+            button {
+                margin-left: 20px; 
+                padding: 8px 16px; 
+            }
+        }
+    
+      
+        @media (max-width: 500px) {
+            h2 {
+                font-size: 16px; 
+                margin-left: 10px;
+            }
+    
+            #biglietti, .totale, .metodo-pagamento, .dati-pagamento {
+                font-size: 12px; 
+                margin-left: 10px;
+            }
+    
+            select, input {
+                font-size: 12px; 
+                width: calc(100% - 20px);
+            }
+    
+            button {
+                margin-left: 10px; 
+                padding: 6px 12px; 
+            }
+        }
+    
+        
+        @media (max-width: 320px) {
+            h2 {
+                font-size: 14px; 
+                margin-left: 5px;
+            }
+    
+            #biglietti, .totale, .metodo-pagamento, .dati-pagamento {
+                font-size: 10px; 
+                margin-left: 5px;
+            }
+    
+            select, input {
+                font-size: 10px; 
+                width: calc(100% - 10px); 
+            }
+    
+            button {
+                margin-left: 5px; 
+                padding: 5px 10px; 
+            }
+        }
+    </style>
+    
 
     <script>
         let totale = 0;
