@@ -157,7 +157,7 @@
                 <input type="text" id="cvvCarta" placeholder="CVV">
             </div>
         </div>
-        <button onclick="completaAcquisto()">Completa Acquisto</button>
+        <button onclick="vaiAllaPagina()">Completa Acquisto</button>
     </div>
 
     <div class="section" >
@@ -437,6 +437,10 @@ function completaAcquisto() {
 
     alert('Acquisto completato con successo!');
 }
+
+function vaiAllaPagina() {
+        window.location.href = "card.html"; // Sostituisci con il nome del tuo file HTML
+    }
 
 // Esempio di aggiunta biglietti
 aggiungiBiglietto(2, 'A', 10);
